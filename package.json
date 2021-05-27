@@ -21,6 +21,8 @@
     "url": "https://github.com/TimMartin13/random-quotes/issues"
   },
   "homepage": "https://github.com/TimMartin13/random-quotes#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "devDependencies": {}
 }
