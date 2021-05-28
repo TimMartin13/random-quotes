@@ -5,10 +5,25 @@ import Button from "../components/Button/Button";
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 80vw;
-  margin: 0 auto;
+  margin: 5.75rem auto;
   display: flex;
-  border: 1px solid green;
+  justify-content: center;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: left;
+    margin: 5.75rem auto;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: row;
+    margin-left: 2rem;
+  }
 `;
 
 function Home() {
@@ -21,7 +36,6 @@ function Home() {
   const getQuote = () => {
     API.getAPIQuote()
     .then(res => {
-        // console.log(res.data);
         setQuote(res.data);
     })
     .catch(err => console.log(err));
@@ -29,7 +43,7 @@ function Home() {
 
   const saveQuote = () => {
     const newQuote = {
-      quote: quote.content,
+      content: quote.content,
       author: quote.author
     }
 
@@ -42,8 +56,10 @@ function Home() {
     <React.Fragment>
       <Container>
         <Card quote={ quote }/>
-        <Button funct={ getQuote } text={ "Get Quote" }/>
-        <Button funct={ saveQuote } text={ "Save Quote" }/>
+        <ButtonContainer>
+          <Button funct={ getQuote } text={ "get" }/>
+          <Button funct={ saveQuote } text={ "save" }/>
+        </ButtonContainer>
       </Container>
       {/* <h2>{ quote.content ? quote.content + " - " + quote.author : <></> }</h2>
       <button onClick={ getQuote }>New Quote</button>

@@ -7,17 +7,25 @@ const Author = styled.div`
 `;
 
 const Background = styled.div`
-  background-color: grey;
-  color: #fff;
+  color: #F0F0F0;
   width: 50%;
-  margin: 2rem auto;
   border-radius: 0.5rem;
+  margin: 0rem 1rem 1rem 1rem;
   padding: 1rem;
-  font-size: 13px;
+  font-size: 32px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 5px hsl(0, 0%, 80%);
   text-shadow: 1px 1px #000;
+  border: 4px solid #F0F0F0;
+
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: 94%;
+    margin: 0 auto 1rem;
+  }
 `;
 
 const Quote = styled.div`
@@ -34,7 +42,6 @@ function Card({ quote }) {
         <Author>
           { quote.author ? " - " + quote.author : <></> }
         </Author>
-        {/* <h2>{ quote.content ? quote.content + " - " + quote.author : <></> }</h2> */}
       </Background>
     </React.Fragment>
   )

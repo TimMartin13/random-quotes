@@ -9,4 +9,8 @@ export default {
   saveQuote: function (postData) {
     return axios.post("/api/quotes", postData);
   },
+  // Get all quotes from db
+  getFavorites: function() {
+    return axios.get("/api/quotes");
+  }
 };
