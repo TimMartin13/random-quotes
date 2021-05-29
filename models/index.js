@@ -1,3 +1,3 @@
 module.exports = {
-  Quotes: require("./Quotes"),
+  Quotes: require("./quotes"),
 };
