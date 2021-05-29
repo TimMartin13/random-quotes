@@ -29,7 +29,7 @@ const Background = styled.div`
 `;
 
 const Quote = styled.div`
-  
+  transition: 0.4s;
 `;
 
 function Card({ quote }) {

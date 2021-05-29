@@ -4,11 +4,17 @@ import API from '../utils/API'
 import styled from 'styled-components';
 
 const Container = styled.div`
-  margin: 3.75rem auto;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const Title = styled.div`
+  color: #F0F0F0;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 `;
 
 function Favorites() {
@@ -29,6 +35,7 @@ function Favorites() {
 
   return (
     <Container>
+      <Title>Favorites</Title>
       { favorites.map((item, index) => (
         <Card quote={ item } key={ index }/>
       ))}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import GlobalStyle from './globalStyles';
 import { Switch, Route, useLocation } from "react-router-dom";
