@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const quotesRoutes = require("./Quotes");
+const quotesRoutes = require("./quotes");
 
 // Post routes
 router.use("/quotes", quotesRoutes);
