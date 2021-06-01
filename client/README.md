@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Employee Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+An app that gets random quotes from a 3rd party API and a few buttons to manipulate that data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Table of Contents
+  
+  * [Useage](#useage)
+  * [Technologies](#technologies)
+  * [License](#license)
+  * [Contact](#contact)
+  * [Links](#links)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Useage
+The easy way: click on the deployed link in the Links section of this document, you will go to the website that looks like this:
 
-### `npm run build`
+![home page](./public/assets/images/landing-page.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on the arrow to get a new quote, and the heart to favorite that quote.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![buttons](./public/assets/images/buttons.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click on the Favorites link at the top and you will go to the Favorites page that looks like the image below.  The favorited quotes are retrieved from the database and displayed most recent at the top to the first saved quote at the bottom.
 
-### `npm run eject`
+![seach area](./public/assets/images/favorites.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+JavaScript, React, HTML, CSS, MongoDB, Heroku, MVC model 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Email: timmartin13@gmail.com
 
-### Analyzing the Bundle Size
+Github: [TimMartin13](https://github.com/TimMartin13)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Deployed link: https://arcane-citadel-39525.herokuapp.com/
 
-### Advanced Configuration
+Repository link: https://github.com/TimMartin13/random-quotes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
